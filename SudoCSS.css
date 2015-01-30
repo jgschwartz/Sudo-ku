@@ -1,0 +1,80 @@
+@CHARSET "UTF-8";
+
+.explanation{
+	width: 50%;
+	margin: auto;
+}
+
+#timer{
+	resize: none;
+	border: 0px;
+	width: 25px;
+	height: 10px;
+}
+
+td>input[readonly]{
+	border: 0px;
+}
+
+input[readonly]{
+	font-weight: bold;
+	text-align: center;
+}
+
+p{
+	width: 50%;
+	text-align: center;
+	margin: auto;
+}
+
+h1, p, ul{
+	font-family: "GeosansLight", sans-serif;
+	text-align: center;
+}
+
+ul{
+	text-align: left;
+}
+
+.container{
+	margin: auto;
+	width: 50%;
+}
+
+.grid, .options{
+	margin: auto;
+	width: 49%;
+	height: 100%;
+	float: left;
+}
+
+.grid{
+	
+}
+
+.options{
+	float: left;
+	width: 200px;
+}
+
+#alert{
+	resize: none;
+	width: 175px;
+	height: 75px;
+}
+
+.sep{
+	width: 1px;
+	background-color: grey;
+	height: 1px;
+}
+
+td{
+	width: 10px;
+	height: 10px;
+	border: 1px;
+}
+
+table{
+	border: 1px solid blue;
+}
