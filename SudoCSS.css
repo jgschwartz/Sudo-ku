@@ -12,11 +12,8 @@
 	height: 10px;
 }
 
-td>input[readonly]{
+.hint{
 	border: 0px;
-}
-
-input[readonly]{
 	font-weight: bold;
 	text-align: center;
 }
@@ -42,14 +39,11 @@ ul{
 }
 
 .grid, .options{
+	overflow: auto;
 	margin: auto;
 	width: 49%;
 	height: 100%;
 	float: left;
-}
-
-.grid{
-	
 }
 
 .options{
@@ -76,5 +70,6 @@ td{
 }
 
 table{
+	text-align: center;
 	border: 1px solid blue;
 }
