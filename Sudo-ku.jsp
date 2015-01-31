@@ -230,7 +230,7 @@
 			<br>
 			<textarea id="alert" readonly></textarea>
 			<br>
-			<input type="button" id="submit" value="Submit" /> <input type="button" id="validate"
+			<input type="button" id="submit" value="Submit Board" /> <input type="button" id="validate"
 				value="Check Answers" />
 		</div>
 		<br style="clear:both;"/> <!-- allows floating grid to left and alerts/buttons to right -->
