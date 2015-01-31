@@ -48,12 +48,12 @@ ul{
 
 .options{
 	float: left;
-	width: 200px;
+	width: 210px;
 }
 
 #alert{
 	resize: none;
-	width: 175px;
+	width: 190px;
 	height: 75px;
 }
 
@@ -71,5 +71,4 @@ td{
 
 table{
 	text-align: center;
-	border: 1px solid blue;
 }
