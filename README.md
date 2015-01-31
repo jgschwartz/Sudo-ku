@@ -1,6 +1,6 @@
 # Sudo-ku
 
-![Sudo-ku Screenshot](https://cloud.githubusercontent.com/assets/10775357/5984640/1168004c-a8a6-11e4-954f-e36248927c4f.png)
+![Sudo-ku Screenshot](https://cloud.githubusercontent.com/assets/10775357/5987943/d1514832-a914-11e4-9b46-e6837b8928dc.png)
 
 Sudo-ku is a short project I built in about a week to see if I could make a Sudoku clone. I came up with the idea after seeing someone playing Sudoku and noticing the name of the "sudo" Unix command in the title. This was at least an interesting angle to take on the game, so I ran with it. Sudo-ku has the same rules as a normal game of Sudoku except the numbers 1-9 are replaced with disk drives A-I.
 
