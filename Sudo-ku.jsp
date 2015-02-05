@@ -36,202 +36,206 @@
 					<th></th>
 				</tr>
 				<tr>
-					<td><input name="sudo-01" class="guess" type="text" maxLength="1" size="1" readonly>
+					<td><input name="sudo-01" type="text" maxLength="1" size="1" readonly>
 					</td>
-					<td><input name="sudo-02" class="hint" type="text" maxLength="1" size="1" value="C" readonly>
+					<td><input name="sudo-02" type="text" maxLength="1" size="1" readonly>
 					</td>
-					<td><input name="sudo-03" class="hint" type="text" maxLength="1" size="1" value="D" readonly>
+					<td><input name="sudo-03" type="text" maxLength="1" size="1" readonly>
 					</td>
-					<td><input name="sudo-04" class="guess" type="text" maxLength="1" size="1" readonly>
+					<td><input name="sudo-04" type="text" maxLength="1" size="1" readonly>
 					</td>
-					<td><input name="sudo-05" class="guess" type="text" maxLength="1" size="1" readonly>
+					<td><input name="sudo-05" type="text" maxLength="1" size="1" readonly>
 					</td>
-					<td><input name="sudo-06" class="hint" type="text" maxLength="1" size="1" value="F" readonly>
+					<td><input name="sudo-06" type="text" maxLength="1" size="1" readonly>
 					</td>
-					<td><input name="sudo-07" class="guess" type="text" maxLength="1" size="1" readonly>
+					<td><input name="sudo-07" type="text" maxLength="1" size="1" readonly>
 					</td>
-					<td><input name="sudo-08" class="guess" type="text" maxLength="1" size="1" readonly>
+					<td><input name="sudo-08" type="text" maxLength="1" size="1" readonly>
 					</td>
-					<td><input name="sudo-09" class="hint" type="text" maxLength="1" size="1" value="G" readonly>
-					</td>
-				</tr>
-				<tr>
-					<td><input name="sudo-11" class="guess" type="text" maxLength="1" size="1" readonly>
-					</td>
-					<td><input name="sudo-12" class="guess" type="text" maxLength="1" size="1" readonly>
-					</td>
-					<td><input name="sudo-13" class="hint" type="text" maxLength="1" size="1" value="G" readonly>
-					</td>
-					<td><input name="sudo-14" class="hint" type="text" maxLength="1" size="1" value="H" readonly>
-					</td>
-					<td><input name="sudo-15" class="hint" type="text" maxLength="1" size="1" value="A" readonly>
-					</td>
-					<td><input name="sudo-16" class="guess" type="text" maxLength="1" size="1" readonly>
-					</td>
-					<td><input name="sudo-17" class="guess" type="text" maxLength="1" size="1" readonly>
-					</td>
-					<td><input name="sudo-18" class="hint" type="text" maxLength="1" size="1" value="F" readonly>
-					</td>
-					<td><input name="sudo-19" class="guess" type="text" maxLength="1" size="1" readonly>
+					<td><input name="sudo-09" type="text" maxLength="1" size="1" readonly>
 					</td>
 				</tr>
 				<tr>
-					<td><input name="sudo-21" class="hint" type="text" maxLength="1" size="1" value="A" readonly>
+					<td><input name="sudo-11" type="text" maxLength="1" size="1" readonly>
 					</td>
-					<td><input name="sudo-22" class="hint" type="text" maxLength="1" size="1" value="H" readonly>
+					<td><input name="sudo-12" type="text" maxLength="1" size="1" readonly>
 					</td>
-					<td><input name="sudo-23" class="hint" type="text" maxLength="1" size="1" value="F" readonly>
+					<td><input name="sudo-13" type="text" maxLength="1" size="1" readonly>
 					</td>
-					<td><input name="sudo-24" class="hint" type="text" maxLength="1" size="1" value="C" readonly>
+					<td><input name="sudo-14" type="text" maxLength="1" size="1" readonly>
 					</td>
-					<td><input name="sudo-25" class="guess" type="text" maxLength="1" size="1" readonly>
+					<td><input name="sudo-15" type="text" maxLength="1" size="1" readonly>
 					</td>
-					<td><input name="sudo-26" class="hint" type="text" maxLength="1" size="1" value="B" readonly>
+					<td><input name="sudo-16" type="text" maxLength="1" size="1" readonly>
 					</td>
-					<td><input name="sudo-27" class="hint" type="text" maxLength="1" size="1" value="D" readonly>
+					<td><input name="sudo-17" type="text" maxLength="1" size="1" readonly>
 					</td>
-					<td><input name="sudo-28" class="hint" type="text" maxLength="1" size="1" value="E" readonly>
+					<td><input name="sudo-18" type="text" maxLength="1" size="1" readonly>
 					</td>
-					<td><input name="sudo-29" class="guess" type="text" maxLength="1" size="1" readonly>
-					</td>
-				</tr>
-				<tr>
-					<td class="sep" colspan="11"></td>
-				</tr>
-				<tr>
-					<td><input name="sudo-31" class="guess" type="text" maxLength="1" size="1" readonly>
-					</td>
-					<td><input name="sudo-32" class="guess" type="text" maxLength="1" size="1" readonly>
-					</td>
-					<td><input name="sudo-33" class="hint" type="text" maxLength="1" size="1" value="I" readonly>
-					</td>
-					<td><input name="sudo-34" class="hint" type="text" maxLength="1" size="1" value="F" readonly>
-					</td>
-					<td><input name="sudo-35" class="hint" type="text" maxLength="1" size="1" value="H" readonly>
-					</td>
-					<td><input name="sudo-36" class="guess" type="text" maxLength="1" size="1" readonly>
-					</td>
-					<td><input name="sudo-37" class="guess" type="text" maxLength="1" size="1" readonly>
-					</td>
-					<td><input name="sudo-38" class="guess" type="text" maxLength="1" size="1" readonly>
-					</td>
-					<td><input name="sudo-39" class="hint" type="text" maxLength="1" size="1" value="B" readonly>
+					<td><input name="sudo-19" type="text" maxLength="1" size="1" readonly>
 					</td>
 				</tr>
 				<tr>
-					<td><input name="sudo-41" class="hint" type="text" maxLength="1" size="1" value="F" readonly>
+					<td><input name="sudo-21" type="text" maxLength="1" size="1" readonly>
 					</td>
-					<td><input name="sudo-42" class="guess" type="text" maxLength="1" size="1" readonly>
+					<td><input name="sudo-22" type="text" maxLength="1" size="1" readonly>
 					</td>
-					<td><input name="sudo-43" class="guess" type="text" maxLength="1" size="1" readonly>
+					<td><input name="sudo-23" type="text" maxLength="1" size="1" readonly>
 					</td>
-					<td><input name="sudo-44" class="guess" type="text" maxLength="1" size="1" readonly>
+					<td><input name="sudo-24" type="text" maxLength="1" size="1" readonly>
 					</td>
-					<td><input name="sudo-45" class="guess" type="text" maxLength="1" size="1" readonly>
+					<td><input name="sudo-25" type="text" maxLength="1" size="1" readonly>
 					</td>
-					<td><input name="sudo-46" class="guess" type="text" maxLength="1" size="1" readonly>
+					<td><input name="sudo-26" type="text" maxLength="1" size="1" readonly>
 					</td>
-					<td><input name="sudo-47" class="guess" type="text" maxLength="1" size="1" readonly>
+					<td><input name="sudo-27" type="text" maxLength="1" size="1" readonly>
 					</td>
-					<td><input name="sudo-48" class="guess" type="text" maxLength="1" size="1" readonly>
+					<td><input name="sudo-28" type="text" maxLength="1" size="1" readonly>
 					</td>
-					<td><input name="sudo-49" class="hint" type="text" maxLength="1" size="1" value="D" readonly>
-					</td>
-				</tr>
-				<tr>
-					<td><input name="sudo-51" class="hint" type="text" maxLength="1" size="1" value="G" readonly>
-					</td>
-					<td><input name="sudo-52" class="guess" type="text" maxLength="1" size="1" readonly>
-					</td>
-					<td><input name="sudo-53" class="guess" type="text" maxLength="1" size="1" readonly>
-					</td>
-					<td><input name="sudo-54" class="guess" type="text" maxLength="1" size="1" readonly>
-					</td>
-					<td><input name="sudo-55" class="hint" type="text" maxLength="1" size="1" value="I" readonly>
-					</td>
-					<td><input name="sudo-56" class="hint" type="text" maxLength="1" size="1" value="E" readonly>
-					</td>
-					<td><input name="sudo-57" class="hint" type="text" maxLength="1" size="1" value="F" readonly>
-					</td>
-					<td><input name="sudo-58" class="guess" type="text" maxLength="1" size="1" readonly>
-					</td>
-					<td><input name="sudo-59" class="guess" type="text" maxLength="1" size="1" readonly>
+					<td><input name="sudo-29" type="text" maxLength="1" size="1" readonly>
 					</td>
 				</tr>
 				<tr>
 					<td class="sep" colspan="11"></td>
 				</tr>
 				<tr>
-					<td><input name="sudo-61" class="guess" type="text" maxLength="1" size="1" readonly>
+					<td><input name="sudo-31" type="text" maxLength="1" size="1" readonly>
 					</td>
-					<td><input name="sudo-62" class="hint" type="text" maxLength="1" size="1" value="I" readonly>
+					<td><input name="sudo-32" type="text" maxLength="1" size="1" readonly>
 					</td>
-					<td><input name="sudo-63" class="hint" type="text" maxLength="1" size="1" value="B" readonly>
+					<td><input name="sudo-33" type="text" maxLength="1" size="1" readonly>
 					</td>
-					<td><input name="sudo-64" class="hint" type="text" maxLength="1" size="1" value="E" readonly>
+					<td><input name="sudo-34" type="text" maxLength="1" size="1" readonly>
 					</td>
-					<td><input name="sudo-65" class="guess" type="text" maxLength="1" size="1" readonly>
+					<td><input name="sudo-35" type="text" maxLength="1" size="1" readonly>
 					</td>
-					<td><input name="sudo-66" class="hint" type="text" maxLength="1" size="1" value="G" readonly>
+					<td><input name="sudo-36" type="text" maxLength="1" size="1" readonly>
 					</td>
-					<td><input name="sudo-67" class="hint" type="text" maxLength="1" size="1" value="A" readonly>
+					<td><input name="sudo-37" type="text" maxLength="1" size="1" readonly>
 					</td>
-					<td><input name="sudo-67" class="hint" type="text" maxLength="1" size="1" value="D" readonly>
+					<td><input name="sudo-38" type="text" maxLength="1" size="1" readonly>
 					</td>
-					<td><input name="sudo-69" class="hint" type="text" maxLength="1" size="1" value="H" readonly>
-					</td>
-				</tr>
-				<tr>
-					<td><input name="sudo-71" class="guess" type="text" maxLength="1" size="1" readonly>
-					</td>
-					<td><input name="sudo-72" class="hint" type="text" maxLength="1" size="1" value="G" readonly>
-					</td>
-					<td><input name="sudo-73" class="guess" type="text" maxLength="1" size="1" readonly>
-					</td>
-					<td><input name="sudo-74" class="guess" type="text" maxLength="1" size="1" readonly>
-					</td>
-					<td><input name="sudo-75" class="hint" type="text" maxLength="1" size="1" value="C" readonly>
-					</td>
-					<td><input name="sudo-76" class="hint" type="text" maxLength="1" size="1" value="H" readonly>
-					</td>
-					<td><input name="sudo-77" class="hint" type="text" maxLength="1" size="1" value="I" readonly>
-					</td>
-					<td><input name="sudo-78" class="guess" type="text" maxLength="1" size="1" readonly>
-					</td>
-					<td><input name="sudo-79" class="guess" type="text" maxLength="1" size="1" readonly>
+					<td><input name="sudo-39" type="text" maxLength="1" size="1" readonly>
 					</td>
 				</tr>
 				<tr>
-					<td><input name="sudo-81" class="hint" type="text" maxLength="1" size="1" value="H" readonly>
+					<td><input name="sudo-41" type="text" maxLength="1" size="1" readonly>
 					</td>
-					<td><input name="sudo-82" class="guess" type="text" maxLength="1" size="1" readonly>
+					<td><input name="sudo-42" type="text" maxLength="1" size="1" readonly>
 					</td>
-					<td><input name="sudo-83" class="guess" type="text" maxLength="1" size="1" readonly>
+					<td><input name="sudo-43" type="text" maxLength="1" size="1" readonly>
 					</td>
-					<td><input name="sudo-84" class="hint" type="text" maxLength="1" size="1" value="B" readonly>
+					<td><input name="sudo-44" type="text" maxLength="1" size="1" readonly>
 					</td>
-					<td><input name="sudo-85" class="guess" type="text" maxLength="1" size="1" readonly>
+					<td><input name="sudo-45" type="text" maxLength="1" size="1" readonly>
 					</td>
-					<td><input name="sudo-86" class="guess" type="text" maxLength="1" size="1" readonly>
+					<td><input name="sudo-46" type="text" maxLength="1" size="1" readonly>
 					</td>
-					<td><input name="sudo-87" class="hint" type="text" maxLength="1" size="1" value="C" readonly>
+					<td><input name="sudo-47" type="text" maxLength="1" size="1" readonly>
 					</td>
-					<td><input name="sudo-88" class="hint" type="text" maxLength="1" size="1" value="G" readonly>
+					<td><input name="sudo-48" type="text" maxLength="1" size="1" readonly>
 					</td>
-					<td><input name="sudo-89" class="guess" type="text" maxLength="1" size="1" readonly>
+					<td><input name="sudo-49" type="text" maxLength="1" size="1" readonly>
+					</td>
+				</tr>
+				<tr>
+					<td><input name="sudo-51" type="text" maxLength="1" size="1" readonly>
+					</td>
+					<td><input name="sudo-52" type="text" maxLength="1" size="1" readonly>
+					</td>
+					<td><input name="sudo-53" type="text" maxLength="1" size="1" readonly>
+					</td>
+					<td><input name="sudo-54" type="text" maxLength="1" size="1" readonly>
+					</td>
+					<td><input name="sudo-55" type="text" maxLength="1" size="1" readonly>
+					</td>
+					<td><input name="sudo-56" type="text" maxLength="1" size="1" readonly>
+					</td>
+					<td><input name="sudo-57" type="text" maxLength="1" size="1" readonly>
+					</td>
+					<td><input name="sudo-58" type="text" maxLength="1" size="1" readonly>
+					</td>
+					<td><input name="sudo-59" type="text" maxLength="1" size="1" readonly>
+					</td>
+				</tr>
+				<tr>
+					<td class="sep" colspan="11"></td>
+				</tr>
+				<tr>
+					<td><input name="sudo-61" type="text" maxLength="1" size="1" readonly>
+					</td>
+					<td><input name="sudo-62" type="text" maxLength="1" size="1" readonly>
+					</td>
+					<td><input name="sudo-63" type="text" maxLength="1" size="1" readonly>
+					</td>
+					<td><input name="sudo-64" type="text" maxLength="1" size="1" readonly>
+					</td>
+					<td><input name="sudo-65" type="text" maxLength="1" size="1" readonly>
+					</td>
+					<td><input name="sudo-66" type="text" maxLength="1" size="1" readonly>
+					</td>
+					<td><input name="sudo-67" type="text" maxLength="1" size="1" readonly>
+					</td>
+					<td><input name="sudo-68" type="text" maxLength="1" size="1" readonly>
+					</td>
+					<td><input name="sudo-69" type="text" maxLength="1" size="1" readonly>
+					</td>
+				</tr>
+				<tr>
+					<td><input name="sudo-71" type="text" maxLength="1" size="1" readonly>
+					</td>
+					<td><input name="sudo-72" type="text" maxLength="1" size="1" readonly>
+					</td>
+					<td><input name="sudo-73" type="text" maxLength="1" size="1" readonly>
+					</td>
+					<td><input name="sudo-74" type="text" maxLength="1" size="1" readonly>
+					</td>
+					<td><input name="sudo-75" type="text" maxLength="1" size="1" readonly>
+					</td>
+					<td><input name="sudo-76" type="text" maxLength="1" size="1" readonly>
+					</td>
+					<td><input name="sudo-77" type="text" maxLength="1" size="1" readonly>
+					</td>
+					<td><input name="sudo-78" type="text" maxLength="1" size="1" readonly>
+					</td>
+					<td><input name="sudo-79" type="text" maxLength="1" size="1" readonly>
+					</td>
+				</tr>
+				<tr>
+					<td><input name="sudo-81" type="text" maxLength="1" size="1" readonly>
+					</td>
+					<td><input name="sudo-82" type="text" maxLength="1" size="1" readonly>
+					</td>
+					<td><input name="sudo-83" type="text" maxLength="1" size="1" readonly>
+					</td>
+					<td><input name="sudo-84" type="text" maxLength="1" size="1" readonly>
+					</td>
+					<td><input name="sudo-85" type="text" maxLength="1" size="1" readonly>
+					</td>
+					<td><input name="sudo-86" type="text" maxLength="1" size="1" readonly>
+					</td>
+					<td><input name="sudo-87" type="text" maxLength="1" size="1" readonly>
+					</td>
+					<td><input name="sudo-88" type="text" maxLength="1" size="1" readonly>
+					</td>
+					<td><input name="sudo-89" type="text" maxLength="1" size="1" readonly>
 					</td>
 				</tr>
 			</table>
 		</div>
 		<div class="options">
+			<br>
+			<input type="button" id="new" value="New Game" />
+			<br>
+			<br>
 			<input type="button" id="start" value="Start Game">
 			<textarea id="timer" readonly>0:00</textarea>
 			<input type="button" id="pause" value="Pause Game" disabled>
 			<br>
 			<textarea id="alert" readonly></textarea>
 			<br>
-			<input type="button" id="submit" value="Submit Board" /> <input type="button" id="validate"
-				value="Check Answers" />
+			<input type="button" id="submit" value="Submit Board" disabled> <input type="button" id="validate"
+				value="Check Answers" disabled>
 		</div>
 		<br style="clear:both;"/> <!-- allows floating grid to left and alerts/buttons to right -->
 	</div>
@@ -250,6 +254,7 @@
 	<p>This page made by Jared Schwartz &copy 2015</p>
 	<script type="text/javascript"
 		src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="NewBoard.js"></script>
 	<script type="text/javascript" src="SudoJS.js"></script>
 </body>
 </html>
