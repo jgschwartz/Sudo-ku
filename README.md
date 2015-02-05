@@ -1,14 +1,12 @@
 # Sudo-ku
 
-![Sudo-ku Screenshot](https://cloud.githubusercontent.com/assets/10775357/5987943/d1514832-a914-11e4-9b46-e6837b8928dc.png)
+![Sudo-ku Screenshot](https://cloud.githubusercontent.com/assets/10775357/6070568/9efcb7ea-ad5b-11e4-8457-f3af5a3a53e1.png)
 
 Sudo-ku is a short project I built in about a week to see if I could make a Sudoku clone. I came up with the idea after seeing someone playing Sudoku and noticing the name of the "sudo" Unix command in the title. This was at least an interesting angle to take on the game, so I ran with it. Sudo-ku has the same rules as a normal game of Sudoku except the numbers 1-9 are replaced with disk drives A-I.
 
 A working version of the site is available here:
 
 http://jsfiddle.net/x73ramLm/3/embedded/result/
-
-I'm currently attempting to build a backtracking algorithm to generate new boards so that the game changes each time.
 
 How To Play:
 
@@ -21,3 +19,4 @@ disallowed with a warning appearing in the text area.
 
 "Submit" is only to be used when the board is completed. It validates the board in the same way as "Check Answers" but also makes sure every space has been filled. If the board is completed correctly, the timer stops and the a congratulatory message is displayed with the time taken to complete.
 
+If you get stuck or finish the game, click "New Game" to instantly generate a new board to solve!
