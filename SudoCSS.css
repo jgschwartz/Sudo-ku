@@ -1,21 +1,10 @@
 @CHARSET "UTF-8";
 
+/* General text above and below game */
+
 .explanation{
 	width: 50%;
 	margin: auto;
-}
-
-#timer{
-	resize: none;
-	border: 0px;
-	width: 25px;
-	height: 10px;
-}
-
-.hint{
-	border: 0px;
-	font-weight: bold;
-	text-align: center;
 }
 
 p{
@@ -33,28 +22,19 @@ ul{
 	text-align: left;
 }
 
-.container{
-	margin: auto;
-	width: 50%;
+
+
+
+/* Sudo-ku Table */
+
+.guess{
+	text-align: center;
 }
 
-.grid, .options{
-	overflow: auto;
-	margin: auto;
-	width: 49%;
-	height: 100%;
-	float: left;
-}
-
-.options{
-	float: left;
-	width: 210px;
-}
-
-#alert{
-	resize: none;
-	width: 190px;
-	height: 75px;
+.hint{
+	border: 0px;
+	font-weight: bold;
+	text-align: center;
 }
 
 .sep{
@@ -71,4 +51,50 @@ td{
 
 table{
 	text-align: center;
+}
+
+
+
+
+/* Options pane */
+
+#timer{
+	resize: none;
+	border: 0px;
+	width: 25px;
+	height: 10px;
+}
+
+.options{
+	float: left;
+	width: 210px;
+}
+
+#alert{
+	resize: none;
+	width: 190px;
+	height: 75px;
+}
+
+#new{
+	background-color: lightgrey;
+	margin-left: 55px;
+}
+
+
+
+
+/* Both table and options */
+
+.container{
+	margin: auto;
+	width: 50%;
+}
+
+.grid, .options{
+	overflow: auto;
+	margin: auto;
+	width: 49%;
+	height: 100%;
+	float: left;
 }
