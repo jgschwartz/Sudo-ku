@@ -5,53 +5,13 @@
 
 $(document).ready(function(){
 	$(window).load(function(){
-//		$("td>input").each(function(){
-//			$(this).prop('readonly', true);
-//		});
-		
-		var setAlert = function(message){
-			$("#alert").text(message);
-		};
-		
-		var timer;
-		
-		$("#start").click(function(){
-			timer = 
-			setInterval(function () {
-				var time = $("#timer").text();
-				var min = parseInt(time.split(":")[0]);
-				var sec = parseInt(time.split(":")[1]) + 1;
-				if(sec >= 60){
-					sec = 00;
-					min += 1;
-				}
-				if(sec < 10){
-					var secStr = "0" + sec.toString();
-					var minStr = min.toString();
-				} else {
-					var secStr = sec.toString();
-					var minStr = min.toString();
-				}
-				$("#timer").text(minStr + ":" + secStr);
-			}, 1000);
-			
-			$("#pause").prop("disabled", false);
-			
-			$(".guess").each(function(){
-				$(this).prop('readonly', false);
-			});
-		});
-		
-		$("#pause").click(function() {
-			clearInterval(timer);
-			$(".guess").each(function(){
-				$(this).prop('readonly', true);
-			});
-		});
 		
 		var sc1 = '[name="'; // sc = sudo call; easy to insert when making a lot of jQuery calls for sudo-01, etc
 		var sc2 =	'"]';
 		
+		/* Names of all the squares, arranged in collections by row, column, and grid.
+		 * This makes it easy to check the board or insert new values.
+		 */
 		var row0 = ["sudo-01","sudo-02","sudo-03","sudo-04","sudo-05","sudo-06","sudo-07","sudo-08","sudo-09"];
 		var row1 = ["sudo-11","sudo-12","sudo-13","sudo-14","sudo-15","sudo-16","sudo-17","sudo-18","sudo-19"];
 		var row2 = ["sudo-21","sudo-22","sudo-23","sudo-24","sudo-25","sudo-26","sudo-27","sudo-28","sudo-29"];
@@ -85,6 +45,82 @@ $(document).ready(function(){
 		var grid8 = ["sudo-67","sudo-68","sudo-69","sudo-77","sudo-78","sudo-79","sudo-87","sudo-88","sudo-89"];
 		var gridCollect = [grid0,grid1,grid2,grid3,grid4,grid5,grid6,grid7,grid8];
 		
+		// Timer for the game; initialized when Start button is clicked
+		var timer;
+		
+		/* Shortcut to send messages to the textarea on the right */
+		var setAlert = function(message){
+			$("#alert").text(message);
+		};
+		
+		/* Function that takes an already generated board and sets those values in the table */
+		var setNewBoard = function(grid){
+			for(var x=0; x<9; x++){
+				for(var y=0; y<9; y++){
+					var next = grid[x][y];
+					if(next === ' '){
+						$(sc1 + rowCollect[x][y] + sc2).removeClass();
+						$(sc1 + rowCollect[x][y] + sc2).val("");
+						$(sc1 + rowCollect[x][y] + sc2).addClass("guess");
+					} else {
+						$(sc1 + rowCollect[x][y] + sc2).removeClass();
+						$(sc1 + rowCollect[x][y] + sc2).val(next);
+						$(sc1 + rowCollect[x][y] + sc2).addClass("hint");
+					}
+				}
+			}
+			return;
+		};
+		
+		/* Generates a new board and sets it on refresh.
+		 * This is the first board a user sees.
+		 */
+		var grid = newBoard();
+		grid = deleteSquares(grid);
+		setNewBoard(grid);
+		
+		$("#start").click(function(){
+			// set timer to count up every second when start clicked
+			timer = 
+			setInterval(function () {
+				var time = $("#timer").text();
+				var min = parseInt(time.split(":")[0]);
+				var sec = parseInt(time.split(":")[1]) + 1;
+				if(sec >= 60){
+					sec = 00;
+					min += 1;
+				}
+				if(sec < 10){
+					var secStr = "0" + sec.toString();
+					var minStr = min.toString();
+				} else {
+					var secStr = sec.toString();
+					var minStr = min.toString();
+				}
+				$("#timer").text(minStr + ":" + secStr);
+			}, 1000);
+			
+			// enable pause, submit, and check buttons
+			$("#pause, #submit, #validate").prop("disabled", false);
+			
+			// allowed guessable squares to be edited
+			$(".guess").each(function(){
+				$(this).prop('readonly', false);
+			});
+		});
+		
+		/* Stops timer and disabled ability to edit guessable squares; opposite of Start */
+		$("#pause").click(function() {
+			clearInterval(timer);
+			$(".guess").each(function(){
+				$(this).prop('readonly', true);
+			});
+		});
+		
+		/* Function to make sure the board follows Sudoku rules using the preset collection of indices.
+		 * If it fails, the message is sent within this method; on success the message is sent outside.
+		 * Contains a boolean for it is submitted or not; if submitted it also failed on empty squares.
+		 */
 		var validateBoard = function(subBool){
 			for(var j=0; j<9; j++){
 				var curRow = rowCollect[j];
@@ -99,7 +135,7 @@ $(document).ready(function(){
 						setAlert("Board not yet completed.");
 						return false; // checks for empty squares if board is being submitted, not validated
 					}
-					if(rowInd > 0){  // empty space defaults to index 0 for some reason
+					if(rowInd > 0){  // empty space defaults to index 0 for some reason, even without leading space in string
 						if(valRows[rowInd] !== 0){
 							setAlert("Check failed on Row " + (j+1).toString());
 							return false;
@@ -140,6 +176,10 @@ $(document).ready(function(){
 			return true;
 		};
 		
+		/* Used for every time a single square is edited.
+		 * Makes sure the new input is a valid letter and sets it to uppercase.
+		 * Clears textarea of alerts.
+		 */
 		var verifySingleInput = function(name){
 			var call = '[name="'+name+'"]';
 			var square = $(call).val();
@@ -162,16 +202,19 @@ $(document).ready(function(){
 			verifySingleInput(this.name);
 		});
 		
+		/* Validate board as it currently appears, without knowing the solution.
+		 * Failure alerts are set within validateBaord() but successful check is set here.
+		 */
 		$("#validate").click(function(){
-			$("#alert").text($("#alert").text() + "\nValidating...");
-			var t = 0;
-			var timer = setInterval(function(){t+=1;},1000);
-			if(validateBoard(false)){ // alert set within function if it fails
+			if(validateBoard(false)){
 				setAlert("Check passed okay.");
 			}
-//			alert("Validation took "+t.toString()+" seconds.");
 		});
 		
+		/* Checks board for correctness and completion.
+		 * If completed correctly, sends a congratulatory message with time taken,
+		 * disabled all buttons but New Game, and stops the timer.
+		 */
 		$("#submit").click(function(){
 			if(validateBoard(true)){
 				var t = $("#timer").text();
@@ -191,9 +234,26 @@ $(document).ready(function(){
 				}
 		
 				setAlert("Congratulations! You solved the board in " + mStr + sStr);
-				$(":button").prop("disabled", true);
+				$(":button:not(#new)").prop("disabled", true);
 				clearInterval(timer);
 			}
+		});
+		
+		/* Used to set a new board and start a new game.
+		 * Stops and resets timer, clears alerts, disables all buttons but start,
+		 * then generates a new board, removes half the answers, and sets it.
+		 * Makes all squares uneditable.
+		 */
+		$("#new").click(function(){
+			clearInterval(timer);
+			$("#timer").text("0:00");
+			setAlert("");
+			grid = newBoard();
+			grid = deleteSquares(grid);
+			setNewBoard(grid);
+			$("#start").prop("disabled", false);
+			$(":button:not(#new, #start)").prop("disabled", true);
+			$("td>input").prop("readonly", true);
 		});
 	});
 });
