@@ -6,7 +6,7 @@ Sudo-ku is a short project I built in about a week to see if I could make a Sudo
 
 A working version of the site is available here:
 
-http://jsfiddle.net/x73ramLm/3/embedded/result/
+http://codepen.io/anon/pen/emezPM
 
 How To Play:
 
